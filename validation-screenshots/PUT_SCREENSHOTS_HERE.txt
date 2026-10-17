@@ -1,0 +1,5 @@
+Save your W3C validator screenshots in this folder with these names:
+  index-validation.png
+  information-validation.png
+  registration-validation.png
+Validator: https://validator.w3.org/  (use "Validate by File Upload" or "Direct Input")

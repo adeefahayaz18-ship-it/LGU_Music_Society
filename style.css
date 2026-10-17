@@ -1,0 +1,211 @@
+/* =====================================================
+   style.css - EXTERNAL stylesheet for registration.html
+   LGU Music Society | Adeefah Ayaz | FA-24-BSCS-158
+   Theme: flat black and amber (no gradients)
+   ===================================================== */
+
+/* ---------- Page basics ---------- */
+body {
+  margin: 0;
+  background-color: #0b0b0b;
+  color: #f5efe6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* ELEMENT SELECTOR: styles every <h2> and <p> */
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #f28c28;
+  font-size: 32px;
+  margin-top: 0;
+}
+p {
+  color: #f5efe6;
+  margin: 0 0 14px 0;
+}
+
+.accent {
+  color: #f28c28;
+}
+
+header {
+  background-color: #1a1a1a;
+  border-bottom: 4px solid #f28c28;
+  padding: 20px 30px;
+  text-align: center;
+}
+header img {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 4px;
+}
+header h1 {
+  margin: 8px 0 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+
+/* ---------- Navigation with :hover feedback ---------- */
+nav {
+  border-bottom: 1px solid #3a3a3a;
+  padding: 14px;
+  text-align: center;
+}
+nav a {
+  color: #f5efe6;
+  text-decoration: none;
+  padding: 8px 18px;
+  margin: 0 6px;
+  border: 1px solid #f28c28;
+  border-radius: 20px;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #f28c28;
+  color: #0b0b0b;
+}
+
+/* ATTRIBUTE SELECTOR: highlights the link to the current page */
+nav a[href="registration.html"] {
+  background-color: #f28c28;
+  color: #0b0b0b;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* CLASS SELECTOR: info box above the form */
+.notice {
+  background-color: #f28c28;
+  color: #0b0b0b;
+  border: 3px dashed #0b0b0b;
+  padding: 14px 18px;
+  margin-bottom: 25px;
+}
+
+/* ID SELECTOR: the form container */
+#registration-form {
+  background-color: #1a1a1a;
+  border: 1px solid #3a3a3a;
+  padding: 20px;
+}
+
+/* ---------- Fieldsets, legends, labels ---------- */
+fieldset {
+  border: 2px solid #f28c28;
+  margin: 0 0 22px 0;
+  padding: 15px 20px 20px 20px;
+}
+legend {
+  background-color: #f28c28;
+  color: #0b0b0b;
+  font-weight: bold;
+  padding: 4px 14px;
+}
+label {
+  display: block;
+  margin: 14px 0 6px 0;
+  font-weight: bold;
+  color: #f5efe6;
+}
+.group-title {
+  margin: 20px 0 6px 0;
+  font-weight: bold;
+  color: #f28c28;
+}
+
+/* ---------- Text-type controls ---------- */
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  background-color: #0b0b0b;
+  color: #f5efe6;
+  border: 2px solid #5a5a5a;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+/* ATTRIBUTE SELECTOR: email input gets its own amber border */
+input[type="email"] {
+  border: 2px solid #f28c28;
+  background-color: #141414;
+}
+
+/* :focus feedback on every input */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f28c28;
+  background-color: #262626;
+}
+
+/* ---------- Radio buttons and checkboxes ---------- */
+.choice {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.choice input {
+  width: auto;
+  margin-right: 10px;
+  accent-color: #f28c28;
+}
+.choice label {
+  display: inline;
+  margin: 0;
+  font-weight: normal;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ---------- Buttons with :hover feedback ---------- */
+.buttons {
+  text-align: center;
+}
+button {
+  background-color: #f28c28;
+  color: #0b0b0b;
+  border: 2px solid #f28c28;
+  padding: 12px 34px;
+  margin: 0 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0b0b0b;
+  color: #f28c28;
+}
+button:focus {
+  outline: 3px solid #f5efe6;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #1a1a1a;
+  border-top: 4px solid #f28c28;
+  padding: 20px;
+  text-align: center;
+  color: #b8b0a4;
+  font-size: 15px;
+}
+footer p {
+  color: #b8b0a4;
+  margin: 0 0 6px 0;
+}
+footer a {
+  color: #f28c28;
+}

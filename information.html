@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adeefah Ayaz (FA-24-BSCS-158)">
+  <title>Events and Membership Plans | LGU Music Society</title>
+  <!-- PAGE 2: Information. CSS method used on this page: EMBEDDED CSS (style element in head). -->
+  <style>
+    /* ---------- General page styling ---------- */
+    body {
+      margin: 0;
+      background-color: #0b0b0b;
+      color: #f5efe6;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    /* ELEMENT SELECTOR: styles every <p> and <h2> on the page */
+    p {
+      color: #f5efe6;
+      margin: 0 0 14px 0;
+    }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #f28c28;
+      font-size: 30px;
+      margin-top: 0;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      border-bottom: 4px solid #f28c28;
+      padding: 20px 30px;
+      text-align: center;
+    }
+    header img {
+      background-color: #ffffff;
+      border-radius: 50%;
+      padding: 4px;
+    }
+    .accent {
+      color: #f28c28;
+    }
+
+    header h1 {
+      margin: 8px 0 0 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 38px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      border-bottom: 1px solid #3a3a3a;
+      padding: 14px;
+      text-align: center;
+    }
+    nav a {
+      color: #f5efe6;
+      text-decoration: none;
+      padding: 8px 18px;
+      margin: 0 6px;
+      border: 1px solid #f28c28;
+      border-radius: 20px;
+      display: inline-block;
+    }
+    /* Hover feedback on navigation links */
+    nav a:hover {
+      background-color: #f28c28;
+      color: #0b0b0b;
+    }
+
+    /* ATTRIBUTE SELECTOR: matches the link whose href is "information.html" (current page) */
+    a[href="information.html"] {
+      background-color: #f28c28;
+      color: #0b0b0b;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    /* ID SELECTOR: the main event article */
+    #event-article {
+      background-color: #1a1a1a;
+      border: 1px solid #3a3a3a;
+      border-left: 6px solid #f28c28;
+      padding: 25px;
+      margin-bottom: 30px;
+    }
+
+    /* CLASS SELECTOR: used by the aside (announcement) box */
+    .notice {
+      background-color: #f28c28;
+      color: #0b0b0b;
+      border: 3px dashed #0b0b0b;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .notice h2,
+    .notice p {
+      color: #0b0b0b;
+    }
+    .notice h2 {
+      font-size: 24px;
+    }
+
+    .media-block {
+      background-color: #1a1a1a;
+      border: 1px solid #3a3a3a;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    audio,
+    video {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      margin: 10px 0 20px 0;
+    }
+    video {
+      border: 3px solid #f28c28;
+    }
+
+    /* ---------- Table styling: visible borders, padding, distinct header ---------- */
+    .table-wrap {
+      overflow-x: auto;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #1a1a1a;
+    }
+    caption {
+      caption-side: top;
+      text-align: left;
+      font-weight: bold;
+      font-size: 20px;
+      color: #f28c28;
+      padding-bottom: 10px;
+    }
+    th,
+    td {
+      border: 2px solid #f28c28;
+      padding: 12px 14px;
+      text-align: left;
+    }
+    th {
+      background-color: #f28c28;
+      color: #0b0b0b;
+    }
+    tbody tr:hover {
+      background-color: #2b2b2b;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      border-top: 4px solid #f28c28;
+      padding: 20px;
+      text-align: center;
+      color: #b8b0a4;
+      font-size: 15px;
+    }
+    footer p {
+      color: #b8b0a4;
+      margin: 0 0 6px 0;
+    }
+    footer a {
+      color: #f28c28;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <img src="images/lgu-logo.png" alt="Lahore Garrison University official logo with the motto Knowledge is Light" width="80" height="80">
+    <h1>LGU <span class="accent">Music</span> Society</h1>
+  </header>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="information.html">Events &amp; Plans</a>
+    <a href="registration.html">Join Us</a>
+  </nav>
+
+  <main>
+
+    <!-- ===== ARTICLE: one self-contained event description ===== -->
+    <article id="event-article">
+      <h2>Annual Music Night 2026</h2>
+      <p><strong>Date:</strong> Friday, 18 December 2026 &nbsp;|&nbsp; <strong>Venue:</strong> LGU Main Auditorium &nbsp;|&nbsp; <strong>Time:</strong> 6:00 PM</p>
+      <p>Music Night is the biggest event in the society's calendar. Over three hours, members perform solo vocals, bands, qawwali, classical instrumentals and original compositions in front of students, faculty and invited guests.</p>
+      <p>Auditions are held two weeks before the show, and every registered member is welcome to try out. Our studio team will record the full concert and share the best tracks on the society's page.</p>
+    </article>
+
+    <!-- ===== ASIDE: related announcement ===== -->
+    <aside class="notice">
+      <h2>Announcement</h2>
+      <p><strong>Tip:</strong> Early-bird members who register before 30 November get free access to the recording workshop. Bring your own instrument to Thursday jam sessions!</p>
+    </aside>
+
+    <!-- ===== TABLE: events and membership plans ===== -->
+    <section class="table-wrap">
+      <table>
+        <caption>Upcoming Events and Membership Plans, Fall 2026</caption>
+        <thead>
+          <tr>
+            <th scope="col">Event</th>
+            <th scope="col">Date</th>
+            <th scope="col">Membership Plan Required</th>
+            <th scope="col">Fee (PKR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Weekly Jam Session</td>
+            <td>Every Thursday</td>
+            <td>Basic</td>
+            <td>500 / semester</td>
+          </tr>
+          <tr>
+            <td>Recording Workshop</td>
+            <td>12 November 2026</td>
+            <td>Standard</td>
+            <td>1,500 / semester</td>
+          </tr>
+          <tr>
+            <td>Songwriting Circle</td>
+            <td>26 November 2026</td>
+            <td>Standard</td>
+            <td>1,500 / semester</td>
+          </tr>
+          <tr>
+            <td>Annual Music Night (performer)</td>
+            <td>18 December 2026</td>
+            <td>Premium</td>
+            <td>3,000 / year</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===== AUDIO AND VIDEO ===== -->
+    <section class="media-block">
+      <h2>Listen &amp; Watch</h2>
+
+      <p><strong>Audio:</strong> A short demo melody from our studio.</p>
+      <!-- Audio with controls and fallback text -->
+      <audio controls>
+        <source src="media/jam-session.mp3" type="audio/mpeg">
+        <source src="media/jam-session.ogg" type="audio/ogg">
+        Your browser does not support the audio element. You can <a href="media/jam-session.mp3">download the audio clip</a> instead.
+      </audio>
+
+      <p><strong>Video:</strong> A preview of our studio sessions.</p>
+      <!-- Video with controls and fallback text -->
+      <video controls width="640" height="360" poster="media/studio-poster.png">
+        <source src="media/studio-preview.mp4" type="video/mp4">
+        Your browser does not support the video element. You can <a href="media/studio-preview.mp4">download the video clip</a> instead.
+      </video>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Contact: <a href="mailto:musicsociety@lgu.edu.pk">musicsociety@lgu.edu.pk</a> &nbsp;|&nbsp; Lahore Garrison University, Lahore, Pakistan</p>
+    <p>&copy; 2026 LGU Music Society. Created by Adeefah Ayaz (FA-24-BSCS-158), Section I, Computer Science.</p>
+  </footer>
+
+</body>
+</html>
